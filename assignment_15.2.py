@@ -8,7 +8,7 @@ cur.execute('DROP TABLE IF EXISTS Counts')
 cur.execute('''
 CREATE TABLE Counts (org TEXT, count INTEGER)''')
 
-fname = input('Enter file name: ')
+fname = 'mbox.txt'
 if (len(fname) < 1): fname = 'mbox.txt'
 fh = open(fname)
 for line in fh:
