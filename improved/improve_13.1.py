@@ -51,21 +51,4 @@ data_bank.processes()
 
 
 
-# Retrieve all of the anchor tags
-sum=0
-count=0
-tag_list=list()
-tags = soup('span')
-for tag in tags:
-    tag=tag.contents[0]
-    tag_new=str(tag)
-    count=count+1
-    int_tag=int(tag_new)
-    sum=sum+int_tag
-print(sum,count)
-
-#for i in tag_list:
-    #sum=sum+i
-    #count=count+1
-#print(sum,count)
 
