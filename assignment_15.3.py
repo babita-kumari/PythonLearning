@@ -1,7 +1,8 @@
 import xml.etree.ElementTree as ET
 import sqlite3
+import json
 
-conn = sqlite3.connect('assignment5_sql.sqlite')
+conn = sqlite3.connect('assignmen85_sql.sqlite')
 cur = conn.cursor()
 
 # Make some fresh tables using executescript()
@@ -54,7 +55,6 @@ all = stuff.findall('dict/dict/dict')
 print('Dict count:', len(all))
 for entry in all:
     if ( lookup(entry, 'Track ID') is None ) : continue
-
     name = lookup(entry, 'Name')
     artist = lookup(entry, 'Artist')
     album = lookup(entry, 'Album')
