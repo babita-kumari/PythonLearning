@@ -1,3 +1,9 @@
+"""
+Write a Python program for a URL, read the json data from that URL using urllib and
+then parse and extract the comment counts from the json data,
+compute the sum of the numbers in the file.
+"""
+
 import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
@@ -23,38 +29,31 @@ class ProcessesJson:
             js=json.loads(data)
         except:
             js=None
-        #js=json.dumps(js)
         return js
 
-    def find_name(self,js):
+    def find_name_count(self,js):
         names=[]
-        for element in js["comments"]:
-            name=element["name"]
-            names.append(name)
-        print(names)
-        return names
-
-    def find_count(self,js):
         counts=[]
         for element in js["comments"]:
+            name=element["name"]
             count=element["count"]
-            count_new=int(count)
-            counts.append(count_new)
+            names.append(name)
+            counts.append(int(count))
+        print(names,counts)
         return counts
 
     def print_sum(self,counts):
         total=0
         for number in counts:
-            total+=sum(counts)
+            total=sum(counts)
         print(total)
 
     def processes(self):
         input=self.get_input();
         file=self.open_file(input);
         data=self.load_data(file);
-        content=self.find_name(data);
-        count=self.find_count(data);
-        self.print_sum(count)
+        content=self.find_name_count(data);
+        self.print_sum(content)
 
 data_list=ProcessesJson()
 data_list.processes()

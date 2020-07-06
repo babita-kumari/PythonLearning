@@ -1,6 +1,5 @@
 # Write a program to extract the floating point values from the linesform:X-DSPAM-Confidence:    0.8475
 
-
 class ParseText:
 
     #def __init__(self,text):

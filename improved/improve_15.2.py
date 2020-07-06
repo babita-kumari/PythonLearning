@@ -1,8 +1,15 @@
+"""
+Write a programme read the mailbox data (mbox.txt)
+and count the number of email messages per organization
+(i.e. domain name of the email address)
+using a database with the following schema to maintain the counts.
+
+"""
+
 import sqlite3
 
 conn = sqlite3.connect('new_emaildb1.sqlite')
 cur = conn.cursor()
-
 cur.execute('DROP TABLE IF EXISTS Counts')
 
 cur.execute('''

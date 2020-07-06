@@ -1,9 +1,12 @@
+"""
+Write a program for a location, contact a web service and retrieve JSON for the web service and parse that data,
+and retrieve the first place_id from the JSON.
+
+"""
+
 import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
-
-
-
 
 #http://py4e-data.dr-chuck.net/json?address=xyz&key=42
 # Ignore SSL certificate errors

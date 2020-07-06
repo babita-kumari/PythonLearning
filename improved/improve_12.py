@@ -1,3 +1,9 @@
+"""
+Write a programme  to retrieve the given document using the HTTP protocol in a way that you
+can examine the HTTP Response headers.
+
+"""
+
 import socket
 
 class ProcessHtmlFile:

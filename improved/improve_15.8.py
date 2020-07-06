@@ -1,3 +1,10 @@
+"""
+Write a program to read given data in JSON format, parse the file, and
+then produce an SQLite database that contains a User, Course, and Member table
+and populate the tables from the data file.
+
+"""
+
 import json
 import sqlite3
 

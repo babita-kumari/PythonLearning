@@ -1,3 +1,9 @@
+"""
+Scraping Numbers from HTML using BeautifulSoup
+Write a program to use urllib to read the HTML from the data files and parse the data,
+extracting numbers and compute the sum of the numbers in the file.
+"""
+
 import urllib.request, urllib.parse,urllib.error
 from bs4 import BeautifulSoup
 import re

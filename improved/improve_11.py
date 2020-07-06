@@ -1,8 +1,13 @@
 
-#step 1: read through and parse a file with text and numbers.
-#step 2: extract all the numbers in the file
-# step 3: convert the string into int
-# step 4: compute the sum of the numbers
+"""
+Write a programme to read through and parse a file with text and numbers and extract all the numbers in the file and compute the sum of the numbers.
+
+step 1: read through and parse a file with text and numbers.
+step 2: extract all the numbers in the file
+step 3: convert the string into int
+step 4: compute the sum of the numbers
+"""
+
 
 class ParseNumberAndSum:
 

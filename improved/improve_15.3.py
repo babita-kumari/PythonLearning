@@ -1,3 +1,10 @@
+"""
+Write a program to create table Artist, Album,Genre and Track. Parse the artist,album,genre and track detail
+from given xml file and prepare a database by joining all the table and
+sort the contents based  on and artist name and print it till limit 3.
+
+"""
+
 import xml.etree.ElementTree as ET
 import sqlite3
 
@@ -12,7 +19,7 @@ CREATE TABLE IF NOT EXISTS Artist (
     name    TEXT UNIQUE
 );
 
-CREATE TABLE IF NOT EXISTS VAlbum (
+CREATE TABLE IF NOT EXISTS Album (
     id  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     artist_id  INTEGER,
     title   TEXT UNIQUE
@@ -113,7 +120,6 @@ class MultipleSqlDatabaseLink:
 
     def processes(self):
         input=self.get_input();
-        #lookup=self.lookup();
         file=self.parse_file(input)
         self.print_result()
 
