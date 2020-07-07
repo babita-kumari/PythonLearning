@@ -4,9 +4,13 @@ Write a program to use urllib to read the HTML from the data files and parse the
 extracting numbers and compute the sum of the numbers in the file.
 """
 
-import urllib.request, urllib.parse,urllib.error
-from bs4 import BeautifulSoup
 import re
+import urllib.error
+import urllib.parse
+import urllib.request
+
+from bs4 import BeautifulSoup
+
 
 class ParseFromHtml:
 

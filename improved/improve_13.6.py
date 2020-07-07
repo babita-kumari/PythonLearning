@@ -4,9 +4,11 @@ then parse and extract the comment counts from the json data,
 compute the sum of the numbers in the file.
 """
 
-import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False

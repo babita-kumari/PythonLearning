@@ -5,8 +5,8 @@ sort the contents based  on and artist name and print it till limit 3.
 
 """
 
-import xml.etree.ElementTree as ET
 import sqlite3
+import xml.etree.ElementTree as ET
 
 conn = sqlite3.connect('assignment12_sql.sqlite')
 cur = conn.cursor()

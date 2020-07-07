@@ -6,9 +6,12 @@ Find the link at position 18 (the first name is 1). Follow that link. Repeat thi
 The answer is the last name that you retrieve.
 """
 
-import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup
 import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
+
+from bs4 import BeautifulSoup
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()

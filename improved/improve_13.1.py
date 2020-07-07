@@ -1,10 +1,11 @@
 
 
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
 import ssl
+from urllib.request import urlopen
 
-        # Ignore SSL certificate errors
+from bs4 import BeautifulSoup
+
+# Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE

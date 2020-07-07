@@ -5,9 +5,11 @@ compute the sum of the numbers in the file.
 
 """
 
-import urllib.request, urllib.parse, urllib.error
-import xml.etree.ElementTree as ET
 import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False

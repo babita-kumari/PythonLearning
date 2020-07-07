@@ -4,9 +4,11 @@ and retrieve the first place_id from the JSON.
 
 """
 
-import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
 
 #http://py4e-data.dr-chuck.net/json?address=xyz&key=42
 # Ignore SSL certificate errors

@@ -4,10 +4,14 @@ and prepare an excel database showing name and price of the items.
 """
 
 
-import urllib.request, urllib.parse, urllib.error
-from bs4 import BeautifulSoup
-import pandas as pd
 import ssl
+import urllib.error
+import urllib.parse
+import urllib.request
+
+import pandas as pd
+
+from bs4 import BeautifulSoup
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
