@@ -11,7 +11,7 @@ class CalculateSD(CalculateMean):
 
     def get_deviation(self, input_data, mean):
         deviation_list = []
-        for number in inpugt_data:
+        for number in input_data:
             deviation = number - mean
             deviation_list.append(deviation)
         return deviation_list
