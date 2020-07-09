@@ -2,7 +2,7 @@
 Write a program to calculate mean and standard deviation of given list.
 
 """
-import math
+
 
 from mean import CalculateMean
 
